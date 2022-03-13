@@ -1,0 +1,25 @@
+import UIKit
+//the variable to check in the switch statement...
+let bandMember:String = "Bob"
+let idNumber = 123
+let salary = 38000.75
+//the switch statement...
+switch bandMember {
+case "Jerry":
+ print("found Jerry")
+case "Bobby":
+ print("found Bobby")
+default:
+ print("couldn't find him")
+}
+// replace the switch statement above with nested if statement
+if bandMember == "Jerry" {
+ print("found Jerry")
+ }
+else if bandMember == "Bobby" {
+ print("found Bobby")
+ }
+else {
+ print("couldn't find him")
+ }
+ 

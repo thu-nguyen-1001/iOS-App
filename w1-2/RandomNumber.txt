@@ -1,0 +1,20 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+//  Make a variable equal to a random number....
+
+let randomNum:UInt32 = arc4random_uniform(100) // range is 0 to 99
+
+// convert the UInt32 to some other  types
+
+let randomTime:TimeInterval = TimeInterval(randomNum)
+
+let someInt:Int = Int(randomNum)
+
+let someString:String = String(randomNum) //string works too
+
+
+// Exercises: try  two other random number generator functions:
+// 1. arc4random()  - returns a random number between zero and 2 to the power of 32 minus 1
+// 2. drand48()  - returns a random Double between 0.0 and 1.0

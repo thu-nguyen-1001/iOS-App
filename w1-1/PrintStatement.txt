@@ -1,0 +1,12 @@
+import UIKit
+let name = "John"
+// both print "Hello John"
+print("Hello", name, "and the world!")
+print("Hello \(name)")
+print("Hello", name, "and the world! ", terminator:"")
+//Exercise: try using “-- >” for the parameter terminator 
+print("Hello \(name)")
+var hello = "Hello"
+var world = "World!"
+print(hello,world,separator: "|") // prints "Hello|World!"
+print(hello,world,separator: "\\\\//") // prints "Hello\\//World!"

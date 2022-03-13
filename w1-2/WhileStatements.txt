@@ -1,0 +1,38 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+// The code would run this loop 100 times
+
+var i:Int = 0
+
+while i < 100 {
+    
+    print(i)
+    i += 1 //increment i so eventually we break out of the while loop
+}
+
+// while loops can also be used with non-numbers
+
+var title:String = ""
+
+//this loop will run 5 times
+
+while title != "aaaaa" {
+    
+    title = title + "a"  //add another "a" each loop to the title
+    
+}
+
+print (title)
+
+// repeat-while statement
+
+title = ""
+repeat {
+    
+    title = title + "b"  //add another "a" each loop to the title
+    
+} while title != "bbbbb"
+
+print (title)

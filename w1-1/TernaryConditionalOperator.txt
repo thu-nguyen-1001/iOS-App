@@ -1,0 +1,17 @@
+import UIKit
+var youMessWithChuckNorris:Bool = true
+let answer1:String = "You die horribly"
+let answer2:String = "You live"
+/* Ternary Conditional Operators are a shorthand way of making something equal one thing or another 
+based on a true or false condition. Similar to an if...else statement but in the format below....
+something = condition ? expression : expression
+*/
+var whatHappens:String = youMessWithChuckNorris ? answer1 : answer2
+print (whatHappens) //You die horribly
+// To write the same line as an if...else statement would require this...
+if (youMessWithChuckNorris == true){
+ whatHappens = answer1
+} else {
+ whatHappens = answer2
+}
+print (whatHappens) //You die horribly

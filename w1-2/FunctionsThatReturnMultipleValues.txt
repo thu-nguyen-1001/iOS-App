@@ -1,0 +1,74 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var playerLives:Int = 3
+
+
+//Below is a function to check if the player still has some lives left.
+//This part...   -> Bool   ...means the function will return a Bool value.
+
+func canStillPlayGame() -> Bool {
+    
+    if ( playerLives == 0){
+        
+        //return false if playerLives is zero
+        return false
+        
+    } else {
+        
+        //use an else statement so something is always returned...
+        
+        return true
+    }
+    
+}
+
+// use the function like so...
+
+var playerAlive:Bool = canStillPlayGame() //will return true
+
+
+//------------------------------------------------------------------------
+
+//Swift 3 Functions that Return Multiple Values
+//in this example, we'll pass in an array of integer values to this function and get three integers return
+
+func calculateStatistics ( scores:[Int] ) -> (min:Int, max:Int, sum:Int) {
+    
+    
+    var min = scores[0] //initially the first int in the array
+    var max = scores[0] //initially the first int in the array
+    var sum = 0 //gets added to through the for loop below
+    
+    
+    // loop through each Int in the array, each time the current Int is score
+    for score in scores {
+        
+        if (score > max) {
+            //current score is max
+            max = score
+            
+        } else if (score < min) {
+            //current score is the least
+            min = score
+            
+        }
+        //keep adding
+        sum = sum + score
+        
+        
+        
+    }
+    
+    return (min, max, sum)
+    
+    
+}
+
+let theArray = [5, 1, 100, 3, 9 ]
+let statistics = calculateStatistics ( scores: theArray )
+
+print (statistics.min) // 1
+print (statistics.max) // 100
+print (statistics.sum) // 118

@@ -1,0 +1,25 @@
+import UIKit
+let intMax: Int = Int.max
+let uint8Max = UInt8.max
+let uint8Min = UInt8.min
+let int8Max = Int8.max
+let int8Min = Int8.min
+let uint16Max = UInt16.max
+let uint32Max = UInt32.max
+let uint64Max = UInt64.max
+var aaa = 13
+aaa = 13 + 2
+var bbb: UInt32 = 100
+bbb += 23
+bbb = bbb % 5
+print(bbb)
+var ccc = 12.5
+var ddd :Double = 100.35 //Float64
+var eee:Float = 88.88 //Float32
+var fff: Float80 = 123.5
+fff = fff/Float80(ccc) * Float80(ddd)
+print (fff)
+var done: Bool = false
+var finished = false
+var char: Character = "a"
+var str = "Hello, playground"

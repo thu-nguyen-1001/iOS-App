@@ -1,0 +1,53 @@
+//: Playground - noun: a place where people can play
+import UIKit
+
+//create an empty array containing String types
+
+var swiftArray = [String]()
+
+swiftArray.append("Tutorials")
+
+swiftArray.append("More Tutorials")
+
+//remove an item
+
+swiftArray.remove(at: 0)  //remove first item
+
+//remove everything
+
+swiftArray.removeAll()
+
+//add stuff back...
+
+swiftArray = ["CartoonSmart.com" , "Shameless Plug", "Best Tutorials for Swift"]
+
+// check if the array has a specific thing...
+
+for name in swiftArray {
+    
+    //for loop iterates through all Strings in the array
+    
+    if (name == "CartoonSmart.com") {
+        
+        // found the one we are looking for
+        
+        print("found")
+        
+        break
+        
+    }
+    
+    
+    
+}
+
+// check if a specific index equals something
+
+if ("Best Tutorials for Swift" == swiftArray[2] ) {
+    
+    
+    // remember the 2 in swift3Array[2]  means that actually the third item in th array since indexing starts at 0
+    
+    print("true dat")
+    
+}

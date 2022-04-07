@@ -1,0 +1,307 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Italic;
+}
+{\colortbl;\red255\green255\blue255;\red155\green35\blue147;\red255\green255\blue255;\red0\green0\blue0;
+\red83\green101\blue121;\red92\green38\blue153;\red196\green26\blue22;\red50\green109\blue116;\red57\green0\blue160;
+\red28\green0\blue207;\red36\green82\blue86;}
+{\*\expandedcolortbl;;\csgenericrgb\c60759\c13753\c57628;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c0\c0\c0;
+\csgenericrgb\c32401\c39745\c47507;\csgenericrgb\c35922\c14825\c60191;\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c19418\c42935\c45455;\csgenericrgb\c22454\c0\c62803;
+\csgenericrgb\c11000\c0\c81000;\csgenericrgb\c13924\c32052\c33684;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab593
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 \cb3 import
+\f1\b0 \cf4  UIKit\
+\
+\
+
+\f2\i \cf5 // string type variable, contains as many letters, numbers, etc as you want
+\f1\i0 \cf4 \
+\
+
+\f0\b \cf2 var
+\f1\b0 \cf4  mishMash:\cf6 String\cf4  = \cf7 "sdf2325&803!!~"\cf4 \
+\
+
+\f2\i \cf5 // create an array of Characters
+\f1\i0 \cf4 \
+\
+
+\f0\b \cf2 var
+\f1\b0 \cf4  letters:[\cf6 Character\cf4 ] = [\cf7 "C"\cf4 , \cf7 "A"\cf4 ,\cf7 "R"\cf4 , \cf7 "T"\cf4 ,\cf7 "O"\cf4 , \cf7 "O"\cf4 ,\cf7 "N"\cf4 , \cf7 "S"\cf4 ,\cf7 "M"\cf4 , \cf7 "A"\cf4 ,\cf7 "R"\cf4 , \cf7 "T"\cf4 , \cf7 "."\cf4 , \cf7 "c"\cf4 , \cf7 "o"\cf4 , \cf7 "m"\cf4 ]\
+\
+
+\f2\i \cf5 //convert the letters array into a string variable named website
+\f1\i0 \cf4 \
+\
+
+\f0\b \cf2 var
+\f1\b0 \cf4  website:\cf6 String\cf4  = \cf6 String\cf4  (\cf8 letters\cf4 )\
+\
+
+\f2\i \cf5 // lets play around....
+\f1\i0 \cf4 \
+\
+\cf9 print\cf4  (\cf8 letters\cf4 .\cf6 count\cf4 )  
+\f2\i \cf5 // prints the number of objects in the array
+\f1\i0 \cf4 \
+\
+\cf9 print\cf4  (\cf8 website\cf4 .\cf6 count\cf4  ) 
+\f2\i \cf5 //prints the same value
+\f1\i0 \cf4 \
+\
+
+\f2\i \cf5 //test to see if converting it all to lower case equals "cartoonsmart.com"
+\f1\i0 \cf4 \
+\
+
+\f0\b \cf2 if
+\f1\b0 \cf4  ( \cf8 website\cf4 .\cf9 lowercased\cf4 () == \cf7 "cartoonsmart.com"\cf4 ) \{\
+    \
+    \cf9 print\cf4  (\cf8 website\cf4 .\cf9 lowercased\cf4 ())\
+    \
+    
+\f2\i \cf5 //note in Swift 3 this is lowercased(). In Swift 2 it was lowercaseString
+\f1\i0 \cf4 \
+    \
+\}\
+\
+
+\f0\b \cf2 let
+\f1\b0 \cf4  capFirstLetters = \cf8 website\cf4 .\cf6 capitalized\cf4 \
+
+\f2\i \cf5 //capFirstLetters would be "Cartoonsmart.Com"
+\f1\i0 \cf4 \
+\
+\cf9 print\cf4  (\cf8 capFirstLetters\cf4 )\
+\
+
+\f2\i \cf5 //test to see if website contains a range of ".com"
+\f1\i0 \cf4 \
+\
+
+\f0\b \cf2 if
+\f1\b0 \cf4  ( \cf8 website\cf4 .\cf9 range\cf4 (of: \cf7 ".com"\cf4 ) != 
+\f0\b \cf2 nil
+\f1\b0 \cf4  )\{\
+    \
+    
+\f2\i \cf5 //note in Swift 2, this would have been .rangeOfString(".com")
+\f1\i0 \cf4 \
+    \
+    \cf9 print\cf4  (\cf7 "it has the dot com"\cf4 )\
+\}\
+\
+
+\f0\b \cf2 if
+\f1\b0 \cf4  ( \cf8 website\cf4 .\cf9 lowercased\cf4 ().\cf9 hasPrefix\cf4 (\cf7 "car"\cf4 )) \{\
+    \
+    
+\f2\i \cf5 //do something if the string begins with "car"
+\f1\i0 \cf4 \
+    \
+    \cf9 print\cf4  (\cf7 "true"\cf4 )\
+    \
+\}\
+\
+
+\f0\b \cf2 if
+\f1\b0 \cf4  ( \cf8 website\cf4 .\cf9 hasSuffix\cf4 (\cf7 ".net"\cf4 )) \{\
+    \
+    
+\f2\i \cf5 // do something if its .net
+\f1\i0 \cf4 \
+    \
+    \cf9 print\cf4  (\cf7 "true"\cf4 )\
+    \
+\} 
+\f0\b \cf2 else
+\f1\b0 \cf4  \{\
+    \
+    
+\f2\i \cf5 //its not .net
+\f1\i0 \cf4 \
+    \
+    \cf9 print\cf4  (\cf7 "not true"\cf4 )\
+    \
+\}\
+\
+\
+
+\f0\b \cf2 let
+\f1\b0 \cf4  exampleString = \cf7 "This is an example string"\cf4 \
+
+\f0\b \cf2 let
+\f1\b0 \cf4  stringToArray = \cf8 exampleString\cf4 .\cf9 components\cf4 (separatedBy: \cf7 " "\cf4 )\
+
+\f0\b \cf2 let
+\f1\b0 \cf4  stringFromArray = \cf8 stringToArray\cf4 .\cf9 joined\cf4 (separator: \cf7 "_"\cf4 )\
+
+\f0\b \cf2 let
+\f1\b0 \cf4  swiftString = \cf8 exampleString\cf4 .\cf9 replacingOccurrences\cf4 (of: \cf7 " "\cf4 , with: \cf7 "_"\cf4 )\
+
+\f0\b \cf2 let
+\f1\b0 \cf4  swiftString1 = \cf8 exampleString\cf4 .\cf9 replacingOccurrences\cf4 (of: \cf7 "is"\cf4 , with: \cf7 "++"\cf4 )\
+\
+\
+
+\f0\b \cf2 var
+\f1\b0 \cf4  start = \cf8 exampleString\cf4 .\cf6 startIndex\cf4 \
+
+\f0\b \cf2 var
+\f1\b0 \cf4  end = \cf8 exampleString\cf4 .\cf9 index\cf4 (\cf8 exampleString\cf4 .\cf6 endIndex\cf4 , offsetBy: \cf10 -10\cf4 )\
+
+\f0\b \cf2 let
+\f1\b0 \cf4  range = \cf6 Range\cf4 (uncheckedBounds: (lower: \cf8 start\cf4 , upper: \cf8 end\cf4 ))\
+
+\f2\i \cf5 // let subString = exampleString.substring(with: range) //Swift 3
+\f1\i0 \cf4 \
+
+\f0\b \cf2 let
+\f1\b0 \cf4  subString = \cf6 String\cf4  (\cf8 exampleString\cf4 [\cf8 range\cf4 ])  
+\f2\i \cf5 //Swift 4
+\f1\i0 \cf4 \
+\
+
+\f2\i \cf5 //--------------------------------------------------------------------------
+\f1\i0 \cf4 \
+
+\f0\b \cf2 extension
+\f1\b0 \cf4  \cf6 String\cf4  \{\
+    
+\f0\b \cf2 func
+\f1\b0 \cf4  index(of string: \cf6 String\cf4 , options: \cf6 CompareOptions\cf4  = .\cf6 literal\cf4 ) -> \cf6 Index\cf4 ? \{\
+        
+\f0\b \cf2 return
+\f1\b0 \cf4  \cf9 range\cf4 (of: string, options: options)?.\cf6 lowerBound\cf4 \
+    \}\
+    
+\f0\b \cf2 func
+\f1\b0 \cf4  endIndex(of string: \cf6 String\cf4 , options: \cf6 CompareOptions\cf4  = .\cf6 literal\cf4 ) -> \cf6 Index\cf4 ? \{\
+        
+\f0\b \cf2 return
+\f1\b0 \cf4  \cf9 range\cf4 (of: string, options: options)?.\cf6 upperBound\cf4 \
+    \}\
+    
+\f0\b \cf2 func
+\f1\b0 \cf4  indexes(of string: \cf6 String\cf4 , options: \cf6 CompareOptions\cf4  = .\cf6 literal\cf4 ) -> [\cf6 Index\cf4 ] \{\
+        
+\f0\b \cf2 var
+\f1\b0 \cf4  result: [\cf6 Index\cf4 ] = []\
+        
+\f0\b \cf2 var
+\f1\b0 \cf4  start = \cf6 startIndex\cf4 \
+        
+\f0\b \cf2 while
+\f1\b0 \cf4  
+\f0\b \cf2 let
+\f1\b0 \cf4  range = \cf9 range\cf4 (of: string, options: options, range: start..<\cf6 endIndex\cf4 ) \{\
+            result.\cf9 append\cf4 (range.\cf6 lowerBound\cf4 )\
+            start = range.\cf6 upperBound\cf4 \
+        \}\
+        
+\f0\b \cf2 return
+\f1\b0 \cf4  result\
+    \}\
+    
+\f0\b \cf2 func
+\f1\b0 \cf4  ranges(of string: \cf6 String\cf4 , options: \cf6 CompareOptions\cf4  = .\cf6 literal\cf4 ) -> [\cf6 Range\cf4 <\cf6 Index\cf4 >] \{\
+        
+\f0\b \cf2 var
+\f1\b0 \cf4  result: [\cf6 Range\cf4 <\cf6 Index\cf4 >] = []\
+        
+\f0\b \cf2 var
+\f1\b0 \cf4  start = \cf6 startIndex\cf4 \
+        
+\f0\b \cf2 while
+\f1\b0 \cf4  
+\f0\b \cf2 let
+\f1\b0 \cf4  range = \cf9 range\cf4 (of: string, options: options, range: start..<\cf6 endIndex\cf4 ) \{\
+            result.\cf9 append\cf4 (range)\
+            start = range.\cf6 upperBound\cf4 \
+        \}\
+        
+\f0\b \cf2 return
+\f1\b0 \cf4  result\
+    \}\
+\}\
+\
+\
+
+\f0\b \cf2 let
+\f1\b0 \cf4  str = \cf7 "Hello, playground, playground, playground"\cf4 \
+\cf8 str\cf4 .\cf11 index\cf4 (of: \cf7 "play"\cf4 )      
+\f2\i \cf5 // 7
+\f1\i0 \cf4 \
+\cf8 str\cf4 .\cf11 endIndex\cf4 (of: \cf7 "play"\cf4 )   
+\f2\i \cf5 // 11
+\f1\i0 \cf4 \
+\cf8 str\cf4 .\cf11 indexes\cf4 (of: \cf7 "play"\cf4 )    
+\f2\i \cf5 // [7, 19, 31]
+\f1\i0 \cf4 \
+\cf8 str\cf4 .\cf11 ranges\cf4 (of: \cf7 "play"\cf4 )     
+\f2\i \cf5 // [\{lowerBound 7, upperBound 11\}, \{lowerBound 19, upperBound 23\}, \{lowerBound 31, upperBound 35\}]
+\f1\i0 \cf4 \
+\
+
+\f2\i \cf5 //Try the following
+\f1\i0 \cf4 \
+
+\f2\i \cf5 /*
+\f1\i0 \cf4 \
+
+\f2\i \cf5 print (str[str.ranges(of: "play")[1]])
+\f1\i0 \cf4 \
+
+\f2\i \cf5 for i in 0..<str.ranges(of: "play").count \{
+\f1\i0 \cf4 \
+
+\f2\i \cf5     print (str[str.ranges(of: "play")[i]])
+\f1\i0 \cf4 \
+
+\f2\i \cf5 \}
+\f1\i0 \cf4 \
+
+\f2\i \cf5  */
+\f1\i0 \cf4 \
+\
+
+\f0\b \cf2 var
+\f1\b0 \cf4  optionalString: \cf6 String\cf4 ? = \cf7 "Hello"\cf4   
+\f2\i \cf5 // ? means the string value assigned to the variable is optional
+\f1\i0 \cf4 \
+\cf8 optionalString\cf4  == 
+\f0\b \cf2 nil
+\f1\b0 \cf4    
+\f2\i \cf5 // the boolean result can be true or false. If ? is not used to declare optional value above, the boolean result will always be false.
+\f1\i0 \cf4 \
+\
+
+\f0\b \cf2 var
+\f1\b0 \cf4  optionalName: \cf6 String\cf4 ? = \cf7 "John Appleseed"\cf4 \
+
+\f0\b \cf2 var
+\f1\b0 \cf4  greeting = \cf7 "Hello!"\cf4 \
+
+\f0\b \cf2 if
+\f1\b0 \cf4  
+\f0\b \cf2 let
+\f1\b0 \cf4  name = \cf8 optionalName\cf4  \{\
+    \cf8 greeting\cf4  = \cf7 "Hello, \cf4 \\\cf7 (\cf4 name\cf7 )"\cf4 \
+\}\
+\cf9 print\cf4  (\cf8 optionalName\cf4  
+\f0\b \cf2 as
+\f1\b0 \cf4  
+\f0\b \cf2 Any
+\f1\b0 \cf4 )\
+\cf9 print\cf4  (\cf8 optionalName\cf4 !)  
+\f2\i \cf5 //Forced unwrapping of optionalName
+\f1\i0 \cf4 \
+\
+\cf9 print\cf4  (\cf8 optionalName\cf4  ?? \cf7 "Peter Smith"\cf4 )\
+\cf8 optionalName\cf4  = 
+\f0\b \cf2 nil
+\f1\b0 \cf4 \
+\cf9 print\cf4  (\cf8 optionalName\cf4  ?? \cf7 "Peter Smith"\cf4 )\
+}

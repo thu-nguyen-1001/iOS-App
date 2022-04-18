@@ -1,0 +1,37 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red155\green35\blue147;\red255\green255\blue255;\red0\green0\blue0;
+\red15\green104\blue160;\red57\green0\blue160;\red50\green109\blue116;\red108\green54\blue169;\red196\green26\blue22;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c60759\c13753\c57628;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c0\c0\c0\c85000;
+\csgenericrgb\c5882\c40784\c62745;\csgenericrgb\c22454\c0\c62803;\csgenericrgb\c19418\c42935\c45455;\csgenericrgb\c42190\c21278\c66379;\csgenericrgb\c77000\c10200\c8600;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab593
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 \cb3 import
+\f1\b0 \cf4  UIKit\
+\
+
+\f0\b \cf2 let
+\f1\b0 \cf4  \cf5 today\cf4  = \cf6 Date\cf4 ()\
+
+\f0\b \cf2 let
+\f1\b0 \cf4  \cf5 formatter1\cf4  = \cf6 DateFormatter\cf4 ()\
+\cf7 formatter1\cf4 .\cf8 dateStyle\cf4  = .\cf8 short\cf4 \
+\cf8 print\cf4 (\cf7 formatter1\cf4 .\cf8 string\cf4 (from: \cf7 today\cf4 ))\
+\
+\
+
+\f0\b \cf2 let
+\f1\b0 \cf4  \cf5 formatter2\cf4  = \cf6 DateFormatter\cf4 ()\
+\cf7 formatter2\cf4 .\cf8 timeStyle\cf4  = .\cf8 medium\cf4 \
+\cf8 print\cf4 (\cf7 formatter2\cf4 .\cf8 string\cf4 (from: \cf7 today\cf4 ))\
+\
+\
+
+\f0\b \cf2 let
+\f1\b0 \cf4  \cf5 formatter3\cf4  = \cf6 DateFormatter\cf4 ()\
+\cf7 formatter3\cf4 .\cf8 dateFormat\cf4  = \cf9 "HH:mm a|E MMM d, y\'94    //\'93HH:mm a:E M/d/y\'94\cf4 \
+\cf8 print\cf4 (\cf7 formatter3\cf4 .\cf8 string\cf4 (from: \cf7 today\cf4 ))}
